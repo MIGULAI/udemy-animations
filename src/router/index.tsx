@@ -1,5 +1,7 @@
 import { RouteObject } from "react-router-dom";
 import MainPage from "../pages/mainPage/mainPage";
+import { BasicButton } from "../pages/buttons/basicButton";
+import AnimationsDifferences from "../pages/animationsDifferences/animationsDifferences";
 
 type AppRoute = RouteObject & {
   title: string;
@@ -21,8 +23,20 @@ export const routes: Router = {
       element: <div>About Page</div>,
       title: 'About Page'
     }
-  ] as AppRoute[]
-}
+  ] as AppRoute[],
+  'animation': [
+    {
+      path: '/buttons/basic',
+      element: <BasicButton />,
+      title: 'Basic Button'
+    },
+    {
+      path: '/animations/difererences',
+      element: <AnimationsDifferences />,
+      title: 'Animations Differences'
+    }
+  ]
+  }
 
 
 /**

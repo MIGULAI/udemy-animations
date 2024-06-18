@@ -1,4 +1,4 @@
-import { CopyBlock, atomOneDark, atomOneLight, dracula, far } from "react-code-blocks"
+import { CopyBlock, atomOneDark, atomOneLight } from "react-code-blocks"
 import classes from "./mainPage.module.css";
 import useThemeContext from "../../context/themeContext";
 
