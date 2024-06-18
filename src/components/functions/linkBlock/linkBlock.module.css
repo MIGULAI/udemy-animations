@@ -1,0 +1,62 @@
+
+.list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0 ;
+  padding-left: 0px;
+}
+
+.listItem {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: auto; */
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.listItem::marker {
+  content: "";
+  color: #e0e0e0;
+  margin-right: 10px;
+}
+
+.listItem span {
+  padding-bottom: 10px;
+  margin: 0;
+  width: auto;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+
+}
+.listItem:hover {
+  padding: 5px;
+  width: 100%;
+  margin: 0;
+}
+.listItem:hover span {
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.light{
+  color: black
+}
+
+.black {
+  color: white;
+}
