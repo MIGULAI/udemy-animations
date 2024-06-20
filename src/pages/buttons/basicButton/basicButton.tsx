@@ -1,12 +1,12 @@
 
 import { CopyBlock, atomOneDark, atomOneLight } from 'react-code-blocks';
-import ElementWrapper from '../../components/ui/elementWrapper/elementWrapper';
+import ElementWrapper from '../../../components/ui/elementWrapper/elementWrapper';
 import buttonClasses from './basicButton.module.css';
 import cssText from './basicButton.module.css?raw';
 import oneLineTrasnsion from './basicButtonOneLineTransitions.module.css';
 import oneLineTrasnsionText from './basicButtonOneLineTransitions.module.css?raw';
 
-import useThemeContext from '../../context/themeContext';
+import useThemeContext from '../../../context/themeContext';
 
 export const BasicButton = () => {
   const theme = useThemeContext();

@@ -1,0 +1,33 @@
+.button {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #351435;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateX(-100%); /* move to the left */
+  transition: all 1s;
+}
+
+.button:hover:before {
+  transform: translateX(0); /* final position */
+}
+
+.button:hover {
+  color: white;
+}
