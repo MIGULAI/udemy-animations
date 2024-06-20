@@ -30,7 +30,6 @@ function SwapButton() {
         theme={theme === 'light' ? atomOneLight : atomOneDark}
         wrapLongLines
       />
-
     </div>
   );
 }
