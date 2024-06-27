@@ -1,6 +1,7 @@
 {
   "name": "animations-course",
   "private": true,
+  
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.0.14",
     "@fontsource/roboto": "^5.0.13",
     "classnames": "^2.5.1",
     "modern-normalize": "^2.0.0",
