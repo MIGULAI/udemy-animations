@@ -9,6 +9,7 @@ import NamedBoldButton from "../pages/buttons/boldButton/boldButton";
 import NamedVerticalSwipeButton from "../pages/buttons/verticalSwipeButton/verticalSwipeButton";
 import NamedGlowingButton from "../pages/buttons/glowingButton/glowingButton";
 import NamedSwapButton from "../pages/buttons/swapButton/swapButton";
+import WavyLoader from "../pages/loaders/wavyLoader/wavyLoader";
 
 type AppRoute = RouteObject & {
   title: string;
@@ -31,7 +32,7 @@ export const routes: Router = {
       title: 'About Page'
     }
   ] as AppRoute[],
-  'animation': [
+  'Buttons': [
     {
       path: '/buttons/basic',
       element: <BasicButton />,
@@ -76,6 +77,13 @@ export const routes: Router = {
       path: '/buttons/swap',
       element: <NamedSwapButton />,
       title: 'Swap Button'
+    }
+  ],
+  'Loaders': [
+    {
+      path: '/loaders/wavy',
+      element: <WavyLoader />,
+      title: 'Wavy loader'
     }
   ]
 }
