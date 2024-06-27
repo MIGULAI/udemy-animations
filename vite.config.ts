@@ -7,5 +7,6 @@ export default defineConfig({
     react(),
     // plainText('**/*.module.css'),
   ],
+  base: '/udemy-animations/'
   
 })
