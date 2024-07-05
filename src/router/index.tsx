@@ -10,6 +10,10 @@ import NamedVerticalSwipeButton from "../pages/buttons/verticalSwipeButton/verti
 import NamedGlowingButton from "../pages/buttons/glowingButton/glowingButton";
 import NamedSwapButton from "../pages/buttons/swapButton/swapButton";
 import WavyLoader from "../pages/loaders/wavyLoader/wavyLoader";
+import { NamedScalingButton } from "../pages/buttons/scalingButton/scalingButton";
+import NamedCircularSwapingButton from "../pages/buttons/circularSwapingButton/circularSwapingButton";
+import NamedThreeLayearsButton from "../pages/buttons/threeLayearsButton/threeLayearsButton";
+import NamedTextTransiotionButton from "../pages/buttons/textTransitionButton/textTransitionButton";
 
 type AppRoute = RouteObject & {
   title: string;
@@ -77,6 +81,26 @@ export const routes: Router = {
       path: '/buttons/swap',
       element: <NamedSwapButton />,
       title: 'Swap Button'
+    },
+    {
+      path: '/buttons/scale',
+      element: <NamedScalingButton />,
+      title: 'Scale Button'
+    },
+    {
+      path: '/buttons/circularswaping',
+      element: <NamedCircularSwapingButton />,
+      title: 'Circular Swaping Button'
+    },
+    {
+      path: '/buttons/threelayers',
+      element: <NamedThreeLayearsButton />,
+      title: 'Three Layers Button'
+    },
+    {
+      path: '/buttons/testtransition',
+      element: <NamedTextTransiotionButton />,
+      title: 'Test Transition'
     }
   ],
   'Loaders': [
