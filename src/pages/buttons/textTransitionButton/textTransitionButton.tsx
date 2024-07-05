@@ -6,6 +6,8 @@ import classes from "./classes.module.css";
 import cssText from "./textTransitionButton.module.css?raw";
 import TextTransitionSubButton from "./button";
 import rawButton from "./button?raw";
+import ReferencesWrapper from "../../../components/ui/referencesWrapper/referencesWrapper";
+import Reference from "../../../components/ui/reference/reference";
 
 
 function TextTransiotionButton() {
@@ -48,6 +50,17 @@ function TextTransiotionButton() {
         theme={theme === 'light' ? atomOneLight : atomOneDark}
         wrapLongLines
       />
+      <ReferencesWrapper
+        references={[
+          <Reference
+            index={1}
+            text="Animating Button Text with JavaScript | Modern Button Hover Effects"
+            link="https://www.youtube.com/watch?v=TnbHcoUgILM"
+          />
+        ]}
+      />
+
+
     </div>
   );
 }

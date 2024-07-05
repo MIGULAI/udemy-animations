@@ -1,0 +1,16 @@
+.reference {
+  display: -webkit-box;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.reference p {
+  margin: 0;
+  padding: 0;
+}
